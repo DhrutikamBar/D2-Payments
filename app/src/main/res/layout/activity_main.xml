@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_margin="30dp"
+        android:background="#295305"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Successful ! "
+        android:visibility="invisible"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/paymentSuccessTextView"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        android:id="@+id/amountEditText"/>
+
+    <Button
+        android:id="@+id/startPaymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/acme"
+        android:padding="10dp"
+        android:text="Pay with Razorpay"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_margin="30dp"
+        android:background="#C50B05"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Failed ! "
+        android:textColor="#fff"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/paymentFailedTextView"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>
